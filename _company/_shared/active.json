@@ -1,0 +1,40 @@
+{
+  "_migrated": true,
+  "_migrated_v2": true,
+  "secretary": {
+    "activatedAt": "2026-05-21T09:19:46.920Z",
+    "seeded": true
+  },
+  "youtube": {
+    "activatedAt": "2026-05-21T09:19:46.920Z",
+    "seeded": true
+  },
+  "writer": {
+    "activatedAt": "2026-05-21T09:19:46.920Z",
+    "seeded": true
+  },
+  "designer": {
+    "activatedAt": "2026-05-21T09:19:46.920Z",
+    "seeded": true
+  },
+  "instagram": {
+    "activatedAt": "2026-05-21T09:19:46.920Z",
+    "seeded": true
+  },
+  "business": {
+    "activatedAt": "2026-05-21T09:19:46.920Z",
+    "seeded": true
+  },
+  "developer": {
+    "activatedAt": "2026-05-21T09:19:46.920Z",
+    "seeded": true
+  },
+  "researcher": {
+    "activatedAt": "2026-05-21T09:19:46.920Z",
+    "seeded": true
+  },
+  "_migrated_v3": true,
+  "editor": {
+    "activatedAt": "2026-05-21T09:23:03.531Z"
+  }
+}
