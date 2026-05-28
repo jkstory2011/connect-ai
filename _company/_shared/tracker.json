@@ -1,0 +1,38 @@
+{
+  "tasks": [
+    {
+      "id": "20260528075237-j4vu",
+      "title": "필요한 데이터 소스 목록 (Source of Truth): (명확히 기재해야 함)",
+      "description": "자동 등록 (현빈 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "business"
+      ],
+      "createdAt": "2026-05-28T07:52:37.722Z",
+      "status": "done",
+      "sessionDir": "2026-05-28T07-50",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-28T07-50/_report.md\n- 현빈: 자동 생성 파일이 해결해야 할 '현재의 비효율성'을 분석해주세요. JKstory의 주요 업무 흐름(기획-개발-마케팅) 단계별로 수동으로 작성되거\n- 코다리: 비즈니스팀이 정의한 필수 문서 양식들을 기반으로, 이 문서들을 자동으로 생성할 수 있는 시스템 아키텍처(Workflow Automation En\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 💼 현빈 _(비즈니스 전략가 · Head of Business)_\n> 📋 **지시**: 자동 생성 파일이 해결해야 할 '현재의 비효율성'을 분석해주세요. JKstory의 주요 업무 흐름(기획-개발-마케팅) 단계별로 수동으로 작성되거나 누락되기 쉬운 필수 문서 양식(예: 프로젝트 킥오프 체크리스트, API",
+      "completedAt": "2026-05-28T07:55:01.651Z"
+    },
+    {
+      "id": "20260528075237-mc6b",
+      "title": "기술적 제약 사항: (API 호출 한도, 레거시 시스템과의 연동 필요 여부 등)",
+      "description": "자동 등록 (현빈 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "business"
+      ],
+      "createdAt": "2026-05-28T07:52:37.723Z",
+      "status": "done",
+      "sessionDir": "2026-05-28T07-50",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-28T07-50/_report.md\n- 현빈: 자동 생성 파일이 해결해야 할 '현재의 비효율성'을 분석해주세요. JKstory의 주요 업무 흐름(기획-개발-마케팅) 단계별로 수동으로 작성되거\n- 코다리: 비즈니스팀이 정의한 필수 문서 양식들을 기반으로, 이 문서들을 자동으로 생성할 수 있는 시스템 아키텍처(Workflow Automation En\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 💼 현빈 _(비즈니스 전략가 · Head of Business)_\n> 📋 **지시**: 자동 생성 파일이 해결해야 할 '현재의 비효율성'을 분석해주세요. JKstory의 주요 업무 흐름(기획-개발-마케팅) 단계별로 수동으로 작성되거나 누락되기 쉬운 필수 문서 양식(예: 프로젝트 킥오프 체크리스트, API",
+      "completedAt": "2026-05-28T07:55:01.654Z"
+    }
+  ]
+}
