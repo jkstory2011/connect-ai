@@ -1,0 +1,15 @@
+{
+  "report_title": "Potential Financial Loss Assessment Report",
+  "target_audience": "SME 3PL 운영 담당자 및 재무 책임자",
+  "core_metrics": [
+    {"metric_name": "Inventory Mismatch Loss Rate", "unit": "% of Revenue", "data_source_required": "Industry Reports/Audit Data"},
+    {"metric_name": "Operational Inefficiency Cost", "unit": "Cost per Man-Hour (KRW)", "data_source_required": "Labor Market Data / Benchmark WMS Usage"},
+    {"metric_name": "Contract Termination Penalty", "unit": "% of Contract Value", "data_source_required": "Standard Industry Contracts/Legal Benchmarks"}
+  ],
+  "loss_quantification_steps": [
+    {"step": 1, "process": "Identify Critical Failure Point (e.g., Omni-Channel Movement)", "output": "High Frequency of Movements / Data Discrepancy"},
+    {"step": 2, "process": "Calculate Potential Loss (P = Risk x Impact)", "formula_example": "Loss % * Total Revenue Estimate", "visual_emphasis": "ALERT COLOR (#C94A1B)"},
+    {"step": 3, "process": "Propose JKstory Solution & Mitigation Value", "output": "Reduction in Potential Loss (Savings Amount)", "tone": "Confidential/Professional"}
+  ],
+  "required_evidence_type": ["Audit Trail Evidence", "Schema-enforced Data Logs"]
+}
