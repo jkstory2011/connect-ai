@@ -1,11 +1,12 @@
 {
-  "ceo": "google/gemma-4-e4b",
-  "youtube": "google/gemma-4-e4b",
+  "ceo": "google/gemma-4-e2b",
+  "youtube": "openai/gpt-oss-20b",
   "instagram": "google/gemma-4-e4b",
   "designer": "google/gemma-4-e4b",
-  "business": "google/gemma-4-e4b",
+  "developer": "openai/gpt-oss-20b",
+  "business": "openai/gpt-oss-20b",
   "secretary": "google/gemma-4-e4b",
   "editor": "google/gemma-4-e4b",
   "writer": "google/gemma-4-e4b",
-  "researcher": "google/gemma-4-e4b"
+  "researcher": "openai/gpt-oss-20b"
 }
