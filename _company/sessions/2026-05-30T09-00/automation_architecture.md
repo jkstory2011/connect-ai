@@ -1,172 +1,65 @@
-# JKstory SNS 자동화 파이프라인 – 최소 실행 가능 구조
+# ⚙️ JKstory 자동화 파이프라인 초기 시스템 아키텍처
 
-## 1️⃣ 전반 개요
-- **목표**: Researcher가 정의한 데이터 스키마를 기반으로, SNS 광고·홍보 데이터를 수집 → 분석 → 리포트/시각화까지 한 번에 흐르는 파이프라인.
-- **최소 실행 가능**: 각 단계는 독립적 컨테이너화, API‑중심 구조로 설계.
+## 1. 목표
+- **최소 실행 가능**(MVP)으로 데이터 수집 → 처리 → 시각화/알림 순서
+- **에이전트 간 데이터 흐름**을 명확히 정의하여 인프라와 서비스가 독립적이면서도 상호 운용 가능하도록 설계
 
-## 2️⃣ 핵심 컴포넌트
-| # | 서비스 | 역할 | 주요 엔드포인트 |
-|---|--------|------|----------------|
-| 1 | **Data Ingest API** | 외부 SNS(페이스북, IG, TikTok 등) 및 CRM에서 **데이터를 수집** | `POST /ingest/{platform}` |
-| 2 | **Data Store (PostgreSQL + TimescaleDB)** | 구조화된 스키마 저장, 시계열 데이터 관리 | 테이블: `account_meta`, `campaigns`, `adsets`, `ads`, `metrics`, `audiences`, `influencers`, `creatives`, `events`, `crm` |
-| 3 | **Processing Worker (Celery + Redis)** | 비동기 데이터 정제, 변환, KPI 계산 | `tasks/clean_ingest.py`, `tasks/calculate_kpis.py` |
-| 4 | **Analytics API** | KPI 조회, 리포트 요청 | `GET /analytics/summary`, `GET /analytics/detail?campaign_id=...` |
-| 5 | **Dashboard (React + Vite)** | 시각화 & 리포트 제공 | `/dashboard` |
-| 6 | **Alert Service (SMTP/Slack)** | 비정상 이벤트(ROI 급락 등) 알림 | `POST /alerts/trigger` |
+## 2. 핵심 구성 요소
+| Layer | Component | 역할 |
+|-------|-----------|------|
+| **Ingress** | `data_collector` (API) | 외부 API(PayPal, Shopify 등) 호출 및 웹훅 수신 |
+| **Processing** | `worker_queue` (Celery + Redis) | 비동기 작업, 데이터 변환, 검증 |
+| **Storage** | `db_primary` (PostgreSQL) <br> `cache_store` (Redis) | 영속적 저장, 빠른 조회 |
+| **API Gateway** | `api_gateway` (FastAPI) | 내부 서비스 호출, 인증, rate‑limit |
+| **Visualization** | `dashboard` (Next.js + Chart.js) | KPI 대시보드, 알림 UI |
+| **Monitoring** | `prometheus` + `grafana` | 메트릭 수집, 알람 |
 
-## 3️⃣ API 통신 흐름
-```
-┌───────────────────────┐
-│  외부 SNS / CRM API   │
-└───────┬──────────────┘
-        │ POST /ingest/{platform}
-        ▼
-  ┌───────────────────────┐
-  │ Data Ingest API (FastAPI)│
-  └───────┬──────────────┘
-          │ async task (Celery)
-          ▼
-   ┌───────────────────────┐
-   │ Processing Worker (Celery)│
-   └───────┬──────────────┘
-           │ write to DB (PostgreSQL)
-           ▼
-   ┌───────────────────────┐
-   │  Analytics API (FastAPI)│
-   └───────┬──────────────┘
-           │ GET /analytics/summary
-           ▼
-   ┌───────────────────────┐
-   │  Dashboard (React)    │
-   └───────┬──────────────┘
-           │
-  (Alert Service on KPI thresholds)
-```
+## 3. 데이터 흐름 (에이전트 간)
+1. **Collector** → `api_gateway` POST `/tasks/collect`
+2. **Gateway** → `worker_queue` (Celery task) `process_task`
+3. **Worker** →  
+   - 데이터 검증 & 변환 → `db_primary` 저장  
+   - 필요 시 외부 API 호출 (예: 세금계산서 발행) → `api_gateway` POST `/external`
+4. **Worker** → 성공 시 `cache_store`에 이벤트 키 저장
+5. **Dashboard** → `api_gateway` GET `/metrics` + WebSocket (`/ws/updates`)  
+   - Redis Pub/Sub에 구독해 실시간 업데이트
 
-## 4️⃣ 데이터 스키마 (PostgreSQL)
+## 4. API 스키마 (예시)
+```yaml
+# POST /tasks/collect
+request:
+  type: object
+  properties:
+    source_id: string   # PayPal, Shopify 등 식별자
+    payload: object     # 원시 데이터
 
-```sql
--- accounts table
-CREATE TABLE account_meta (
-  id SERIAL PRIMARY KEY,
-  platform TEXT NOT NULL,
-  account_id TEXT UNIQUE NOT NULL,
-  access_token TEXT,
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
+response:
+  type: object
+  properties:
+    task_id: string
+    status: string
 
--- campaigns table
-CREATE TABLE campaigns (
-  id SERIAL PRIMARY KEY,
-  account_id INT REFERENCES account_meta(id),
-  platform TEXT NOT NULL,
-  campaign_id TEXT NOT NULL,
-  name TEXT,
-  objective TEXT,
-  status TEXT,
-  budget NUMERIC,
-  start_date DATE,
-  end_date DATE,
-  UNIQUE(account_id, platform, campaign_id)
-);
-
--- adsets table
-CREATE TABLE adsets (
-  id SERIAL PRIMARY KEY,
-  campaign_id INT REFERENCES campaigns(id),
-  platform TEXT NOT NULL,
-  adset_id TEXT NOT NULL,
-  name TEXT,
-  targeting_json JSONB,
-  bid_amount NUMERIC,
-  daily_budget NUMERIC,
-  UNIQUE(campaign_id, platform, adset_id)
-);
-
--- ads table
-CREATE TABLE ads (
-  id SERIAL PRIMARY KEY,
-  adset_id INT REFERENCES adsets(id),
-  platform TEXT NOT NULL,
-  ad_id TEXT NOT NULL,
-  creative_id TEXT,
-  status TEXT,
-  type TEXT, -- image/video
-  thumbnail_url TEXT,
-  UNIQUE(adset_id, platform, ad_id)
-);
-
--- metrics table
-CREATE TABLE metrics (
-  id SERIAL PRIMARY KEY,
-  ad_id INT REFERENCES ads(id),
-  date DATE NOT NULL,
-  impressions BIGINT,
-  clicks BIGINT,
-  spend NUMERIC,
-  cpc NUMERIC,
-  ctr NUMERIC,
-  revenue NUMERIC,
-  roi NUMERIC
-);
-
--- audiences table
-CREATE TABLE audiences (
-  id SERIAL PRIMARY KEY,
-  platform TEXT NOT NULL,
-  audience_id TEXT NOT NULL,
-  name TEXT,
-  demographics_json JSONB
-);
-
--- influencers table
-CREATE TABLE influencers (
-  id SERIAL PRIMARY KEY,
-  influencer_id TEXT NOT NULL,
-  profile_url TEXT,
-  followers BIGINT,
-  engagement_rate NUMERIC
-);
-
--- creatives table
-CREATE TABLE creatives (
-  id SERIAL PRIMARY KEY,
-  creative_id TEXT NOT NULL,
-  file_url TEXT,
-  type TEXT,
-  upload_date DATE,
-  metadata_json JSONB
-);
-
--- events table
-CREATE TABLE events (
-  id SERIAL PRIMARY KEY,
-  ad_id INT REFERENCES ads(id),
-  event_type TEXT, -- view/add_to_cart/purchase
-  timestamp TIMESTAMP,
-  UNIQUE(ad_id, event_type, timestamp)
-);
-
--- crm table
-CREATE TABLE crm (
-  id SERIAL PRIMARY KEY,
-  customer_id TEXT NOT NULL,
-  email TEXT,
-  purchase_history_json JSONB
-);
+# GET /metrics/{source}
+response:
+  type: object
+  properties:
+    total_collected: integer
+    successful: integer
+    failed: integer
 ```
 
-## 5️⃣ 배포 & CI
+## 5. 보안 & 인증
+- **JWT** 토큰 발급(내부 서비스 간)
+- **API Key** 관리: Vault 또는 AWS Secrets Manager
+- HTTPS + HSTS
 
-- **Docker Compose**: 각 서비스(ingest, analytics, worker, db, dashboard) 컨테이너화.
-- **GitHub Actions**: `lint_test` 실행 → Docker 이미지 빌드 → 테스트 → 스테이징 배포.
-- **Monitoring**: Prometheus + Grafana(Worker, DB 모니터링).
+## 6. 배포 전략
+- **Docker Compose** 로 개발/테스트 환경 구성  
+- CI/CD 파이프라인: GitHub Actions → Docker Hub → Kubernetes (minikube local)
 
-## 6️⃣ 다음 단계 (작업 분배)
+## 7. 향후 확장 포인트
+- **Event Bus** (Kafka) 도입 시 실시간 스트림 처리
+- **Serverless** 함수(Edge, Lambda)로 비용 최적화
 
-| 에이전트 | 역할 |
-|----------|------|
-| **Developer** | `web_init` + `pack_apply dashboard-kit` 실행, API 스켈레톤 생성 |
-| **Tester** | `lint_test` 실행 후 결과 보고, 비동기 워커 테스트 |
-
-> ✅ 이 설계는 최소 실행 가능 구조이며, 이후 확장(예: Kafka, ML 모델) 가능하도록 모듈화되어 있습니다.
+> 이 설계안은 **MVP** 수준이며, 이후 데이터 품질 검증과 Source Grounding 로직이 추가될 예정입니다.  
+> ✅ 설계안은 `automation_architecture.md`에 저장되었습니다.
