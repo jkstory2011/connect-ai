@@ -1,0 +1,3 @@
+# JKstory KPI 대시보드 Wireframe
+## 레이아웃 및 색상 지정
+...
