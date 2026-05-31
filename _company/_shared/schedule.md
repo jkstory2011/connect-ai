@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 5. 31. 오후 8:30:56_
+_업데이트: 2026. 5. 31. 오후 8:34:28_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -13,13 +13,13 @@ _업데이트: 2026. 5. 31. 오후 8:30:56_
 - [2026-05-28] Writer가 작성한 3가지 콘텐츠 유형을 분석하여, 인스타그램에서 가장 높은 B2B 인게이지먼트를 이끌어낼 최적의 포맷(캐러셀 또는 릴스)과 게시 스케줄링 전략을 수립해주세요. 특히 '잠재적 손실액' 계산 과정을 시각적으로 강조할 수 있는 콘텐츠 흐름(Story flow)을 설계해야 합니다. → 산출물 sessions/2026-05-28T06-14/instagram.md
 - [2026-05-30] JKstory 팀의 인스타그램 관련 기능 및 역할 보고 → 산출물 sessions/2026-05-30T08-03/instagram.md
 ### 🎨 Designer
-- [2026-05-31] Writer가 제공한 스크립트의 핵심 메시지를 기반으로, 해당 케이스 스터디에 적합한 시각적 스토리 흐름(Story flow)과 썸네일 디자인 초안을 구상하고, Developer가 설계한 API 스펙에 맞춰 필요한 입력 데이터 구조를 최종 점검할 것. → 산출물 sessions/2026-05-31T11-02/designer.md
 - [2026-05-31] 개발자(코다리)가 설계한 데이터 스키마(`thumbnail_data_schema_v1.json`)와 API 구조를 기반으로, 자동화 파이프라인에 필요한 시각적 요구사항을 구체화하고 Figma 연동이 가능한 초기 디자인 프로토타입 구현을 위한 최소한의 입력 데이터 구조를 정의하라. → 산출물 sessions/2026-05-31T11-17/designer.md
 - [2026-05-31] 파일 경로(/Users/hayoon_jung/connectailab/design_specs/thumbnail_prototype_spec_v1.md)의 내용을 분석하고, 해당 디자인 사양을 AI 지식 기반에 완벽하게 주입하여 모든 향후 작업에 적용할 준비를 하시오. → 산출물 sessions/2026-05-31T11-25/designer.md
+- [2026-05-31] 개발팀이 설계한 데이터 스키마(`thumbnail_data_schema_v1.json`)를 기반으로, 자동화 파이프라인에 필요한 시각적 요구사항을 구체화하고, Figma 연동이 가능한 초기 디자인 프로토타입 구현을 위한 최소한의 입력 데이터 구조 정의 작업을 완료하라. → 산출물 sessions/2026-05-31T11-32/designer.md
 ### 💻 코다리
-- [2026-05-31] Designer와 Writer가 제공하는 콘텐츠 요구사항 및 데이터 스키마(`thumbnail_data_schema_v1.json` 등)를 기반으로, 자동화 파이프라인의 E2E 테스트 환경 설정을 완료하고, 실제 썸네일 자동화 스크립트가 해당 콘텐츠를 성공적으로 처리하도록 최종 테스트 케이스를 정의할 것. → 산출물 sessions/2026-05-31T11-02/developer.md
 - [2026-05-31] 새로운 API 호출 도구에 대해 E2E 테스트를 수행하고, 기존의 썸네일 자동화 파이프라인(thumbnail_data_schema_v1.json 및 API 구조)과의 연동을 검증하라. → 산출물 sessions/2026-05-31T11-11/developer.md
 - [2026-05-31] 확정된 API 스펙(thumbnail_data_schema_v1.json)을 기반으로 썸네일 자동화 파이프라인의 초기 프로토타입 개발과 E2E 테스트 환경 설정을 즉시 시작하고, Designer가 제공한 Figma 연동을 위한 최소한의 API 인터페이스(Mock Data 포함) 정의를 구현하라. → 산출물 sessions/2026-05-31T11-17/developer.md
+- [2026-05-31] 확정된 API 스펙(`thumbnail_data_schema_v1.json`)과 자동화 파이프라인의 E2E 테스트 환경 설정을 완료하고, 실제 썸네일 자동화 스크립트 개발 및 통합 프로토타입 구동을 즉시 시작하라. → 산출물 sessions/2026-05-31T11-32/developer.md
 ### 💼 현빈
 - [2026-05-30] 정의된 KPI와 PostgreSQL 뷰(`v_kpi_summary`)를 기반으로 실제 운영 환경에 적용될 대시보드(Wireframe) 디자인을 구체화하고, 잠재적 재무 리스크 강조 목표에 맞게 시각화 요소를 확정하라. → 산출물 sessions/2026-05-30T14-03/business.md
 - [2026-05-31] 새로운 디자이너 채용에 필요한 예상 비용, 역할 범위(Scope of Work), 그리고 해당 포지션의 비즈니스 목표를 분석하고 제안해줘 → 산출물 sessions/2026-05-31T06-02/business.md

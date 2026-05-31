@@ -149,3 +149,8 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-05-31] 48	| **[CTA/Footer]** | `call_to_action` | 행동 유도. 눈에 띄는 대비색의 버튼(Primary Blue 계열)을 사용하며, 긴급성을 부여하는 서브텍스트를 함께 배치합니다. | Button Background: `#007BFF`, Text: White/Contrast | - | _(근거: Self-RAG)_
 - [2026-05-31] 52	1. **색상 팔레트 (HEX):** Primary (`#1A2B38`), Danger (`#C94A1B`), Solution (`#007BFF`). 이 3가지 색상이 전체 디자인의 시각적 무게 중심을 잡아야 합니다. _(근거: Self-RAG, Memory)_
 - [2026-05-31] 53	2. **타이포그래피:** 전문성과 기술력을 강조하는 모노스페이스(Monospace) 계열의 폰트가 적합합니다. (예: `Roboto Mono` 또는 유사한 느낌의 시스템 폰트). _(근거: Self-RAG, Global Style)_
+- [2026-05-31] * **Typography:** `Roboto Mono`, monospace 계열을 사용하여 데이터 기반의 전문성을 극대화합니다. _(근거: Self-RAG)_
+- [2026-05-31] | `potential_loss_amount` | **[LOSS STATISTIC]** (가장 큰 숫자 레이어) | Number (`currency`) | Text: `${value.toLocaleString()}원`. Color: `#C94A1B` (Risk Amber). Font Size: 5em, Bold. | _(근거: Self-RAG)_
+- [2026-05-31] | `key_risk_metric` | **[METRIC POINT]** (데이터 지표 시각화) | Number (`decimal`) | Diagram: 작은 원형 차트 또는 바 그래프의 '오류 구간'. Highlight: `#C94A1B`. | _(근거: Potential Loss Shielding)_
+- [2026-05-31] 자동화 모듈은 이 데이터 구조에 따라 다음의 시각적 스토리텔링을 강제 실행해야 합니다. _(근거: Self-RAG, Potential Loss Shielding)_
+- [2026-05-31] 3. **[Transition/Break]**: 페이지를 가로지르는 **Security Blue 구분선**이 강제로 삽입되어, 시선의 흐름을 공포에서 희망으로 전환시킴. _(근거: Self-RAG)_
