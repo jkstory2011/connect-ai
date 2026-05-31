@@ -85,3 +85,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-31] Designer가 요청한 디자인 브리프와 코다리가 설계한 API 구조를 기반으로, 썸네일 자동화 스크립트(Figma 연동 포함)의 초기 프로토타입 구현 및 E2E 테스트 환경 설정을 즉시 시작하라. → 산출물 sessions/2026-05-31T07-18/developer.md
 - [2026-05-31] Writer와 Designer가 제공하는 콘텐츠/비주얼 요구사항을 기반으로, 앞서 정의된 `thumbnail_data_schema_v1.json`과 API 구조를 활용하여 E2E 테스트에 필요한 초기 프로토타입 또는 자동화 스크립트의 설계 방향을 제시하라. → 산출물 sessions/2026-05-31T09-31/developer.md
 - [2026-05-31] Designer가 제공한 데이터 스키마(`thumbnail_data_schema_v1.json`)와 API 구조를 기반으로, 썸네일 자동화 파이프라인의 초기 프로토타입(FastAPI, Celery 설정 포함) 개발을 즉시 착수하고 E2E 테스트 환경 설정을 시작하라. → 산출물 sessions/2026-05-31T10-47/developer.md
+- [2026-05-31] Designer와 Writer가 제공하는 콘텐츠 요구사항 및 데이터 스키마(`thumbnail_data_schema_v1.json` 등)를 기반으로, 자동화 파이프라인의 E2E 테스트 환경 설정을 완료하고, 실제 썸네일 자동화 스크립트가 해당 콘텐츠를 성공적으로 처리하도록 최종 테스트 케이스를 정의할 것. → 산출물 sessions/2026-05-31T11-02/developer.md
