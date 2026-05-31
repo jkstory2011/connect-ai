@@ -130,3 +130,12 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-05-31] | **배경** | 복잡하게 얽힌 물류 네트워크 다이어그램 오버레이 (흐릿함) | `#1A2B38` (JK Deep Blue) 배경. 전체적인 전문성 확보. `` | | _(근거: Self-RAG)_
 - [2026-05-31] | **좌측 (Problem)** | **"놓치고 있는 재무적 리스크"** / ⚠️ 잠재적 손실액 $75억? | **헤드라인:** 크고, 경고성이 느껴지는 폰트. **수치:** `color: #C94A1B; font-size: 6em;` (Risk Amber). 문제 지점을 빨간색으로 하이라이트. `` | 공포감 극대화, 시각적 압도. | _(근거: Self-RAG)_
 - [2026-05-31] | **중앙 구분선** | 강렬하고 명확한 시각적 경계선 (Transition Barrier) | `#007BFF` 계열의 두꺼운 라인. 공포에서 희망으로 넘어가는 '방어벽' 느낌 부여. `` | 스토리 흐름 전환 장치. | _(근거: Self-RAG)_
+- [2026-05-31] * 모든 디자인은 다크 모드 기반입니다. (Global Style: `background-color: #1A2B38;`) _(근거: Self-RAG, Global Style)_
+- [2026-05-31] | **[Header]** | `video_title`, `main_theme` | 전문성을 강조하는 강력한 제목. 배경 다이어그램 위에 겹쳐 배치하여 시각적 무게감을 확보합니다. | Title Font (Bold), Color: `#EAEAEA` | - | _(근거: Self-RAG, Layout Tip)_
+- [2026-05-31] | **[Phase 1: 위기 제시]** | `potential_loss_amount` | **최대 비주얼 임팩트 구역.** 수치는 페이지의 중심에 배치하고, 가장 강력한 대비색을 사용합니다. 단순 숫자가 아닌 '금액'임을 강조하는 통화 기호를 필수적으로 사용해야 합니다. | Font Size: `5em` (최대), Color: `#C94A1B` (Risk Amber) | Potential Loss Shielding | _(근거: Self-RAG, Phase 1)_
+- [2026-05-31] | **[Phase 1: 원인 분석]** | `risk_details` | 공포감을 유지하며 전문가적 근거를 제시합니다. 위험 요소는 작은 아이콘과 함께 나열하고, 각 요소를 배경 다이어그램의 '파손 지점'으로 시각화해야 합니다. | Icon Font (Emoji/Solid), Color: `#C94A1B` (하이라이트) | Self-RAG | _(근거: Potential Loss Shielding)_
+- [2026-05-31] | **[Transition Line]** | N/A | 위기감과 희망을 구분하는 강력한 물리적 경계. 페이지를 가로지르는 두꺼운 라인으로, 시선이 강제로 전환되게 합니다. | Color: `#007BFF` (Security Blue), Thickness: `5px - 8px` | Potential Loss Shielding | _(근거: Self-RAG, Phase 2)_
+- [2026-05-31] | **[Phase 2: 해결책 제시]** | `jkstory_core_value`, `explanation_text` | 위기감을 해소하는 '방어막' 역할. JKstory의 핵심 기능을 아이콘과 함께 배치하고, 마치 시스템이 작동하며 빛을 발산하는 듯한 효과를 주어야 합니다. | Color: `#007BFF` (Security Blue), Iconography: '방패', '엔진' 등 | Potential Loss Shielding | _(근거: Self-RAG, 해결책 가이드)_
+- [2026-05-31] | **[CTA/Footer]** | `call_to_action` | 행동 유도. 눈에 띄는 대비색의 버튼(Primary Blue 계열)을 사용하며, 긴급성을 부여하는 서브텍스트를 함께 배치합니다. | Button Background: `#007BFF`, Text: White/Contrast | - | _(근거: Self-RAG)_
+- [2026-05-31] 1. **색상 팔레트 (HEX):** Primary (`#1A2B38`), Danger (`#C94A1B`), Solution (`#007BFF`). 이 3가지 색상이 전체 디자인의 시각적 무게 중심을 잡아야 합니다. _(근거: Self-RAG, Memory)_
+- [2026-05-31] 2. **타이포그래피:** 전문성과 기술력을 강조하는 모노스페이스(Monospace) 계열의 폰트가 적합합니다. (예: `Roboto Mono` 또는 유사한 느낌의 시스템 폰트). _(근거: Self-RAG, Global Style)_
