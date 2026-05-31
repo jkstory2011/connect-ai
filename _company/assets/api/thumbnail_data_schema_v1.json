@@ -1,0 +1,82 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "description": "JKstory 썸네일 자동화 스크립트 입력 데이터 구조 (Figma 연동용)",
+    "required_fields": ["title", "video_topic", "potential_loss_data"]
+  },
+  "global_style_params": {
+    "primary_color": "#1A2B38", 
+    "secondary_danger_color": "#C94A1B", 
+    "tertiary_solution_color": "#007BFF",
+    "font_family_stack": ["'Roboto Mono'", "monospace"],
+    "background_texture": "Complex Logistics Network Diagram (Low Opacity Overlay)" 
+  },
+  "content_sections": [
+    {
+      "section_name": "Phase 1: The Problem (Loss & Fear)",
+      "visual_goal": "공포감 극대화 및 전문적인 위기 진단 제시",
+      "layout_directives": {
+        "background_overlay": "Red/Amber Highlight on specific data nodes.",
+        "main_text_style": {"color": "#C94A1B", "size": "5em", "weight": "bold"},
+        "structure": "Complex Diagram (Flowchart or Data Map) with highlighted failure points."
+      },
+      "data_input": {
+        "video_topic": "[입력된 영상 주제 키워드]",
+        "potential_loss_data": [
+          {
+            "source_node": "취약점 A: 데이터 불일치 지점",
+            "description": "3개 이상의 독립된 마이크로서비스 간 연결 고리 단절.",
+            "estimated_loss_value": 1500000,
+            "unit": "만원 (Potential Loss)",
+            "highlight_color": "#C94A1B",
+            "severity_level": "High"
+          },
+          {
+            "source_node": "취약점 B: 데이터 파편화",
+            "description": "데이터 출처 추적이 불가능하여 재무적 리스크를 유발.",
+            "estimated_loss_value": 800000,
+            "unit": "만원 (Potential Loss)",
+            "highlight_color": "#C94A1B",
+            "severity_level": "Medium"
+          }
+        ]
+      }
+    },
+    {
+      "section_name": "Transition: The Shielding (Hope & Solution)",
+      "visual_goal": "위기 경고에서 해결책 제시로의 극적인 전환.",
+      "layout_directives": {
+        "transition_element": "Strong diagonal line or 'Security Blue' barrier across the screen.",
+        "main_callout_text": "단순한 오류가 아닙니다. 시스템 구조적 취약점(Potential Loss)에서 발생하는 재무적 리스크입니다." 
+      },
+      "data_input": {
+        "solution_features": [
+          {
+            "icon_name": "AI Predict Engine",
+            "feature_title": "1. AI 리스크 예측 엔진",
+            "detailed_description": "<span style=\"color:#007BFF;\">잠재적 손실액을 사전에 포착</span>하여 재무적 위기를 방지합니다.",
+            "visual_asset_key": "predictive_module_icon"
+          },
+          {
+            "icon_name": "Source Grounding",
+            "feature_title": "2. Source Grounding 시스템",
+            "detailed_description": "<span style=\"color:#007BFF;\">모든 데이터의 출처를 강제 추적</span>하여 리스크 원인을 근본적으로 제거합니다.",
+            "visual_asset_key": "source_grounding_icon"
+          },
+          {
+            "icon_name": "Automated Audit",
+            "feature_title": "3. 자동화 감사 모듈",
+            "detailed_description": "<span style=\"color:#007BFF;\">지속적인 시스템 점검</span>을 통해 잠재적 손실 지점을 실시간으로 보고합니다.",
+            "visual_asset_key": "audit_icon"
+          }
+        ]
+      }
+    }
+  ],
+  "mock_data_example": {
+    "title": "🚨 3년 만에 발견된 물류 시스템의 치명적 리스크 | JKstory",
+    "video_topic": "물류 효율화, 데이터 관리",
+    "phase1_loss_value": 2300000,
+    "phase2_solution_focus": "Source Grounding System 활용 사례"
+  }
+}
