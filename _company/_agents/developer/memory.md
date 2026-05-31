@@ -89,3 +89,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-31] 새로운 API 호출 도구에 대해 E2E 테스트를 수행하고, 기존의 썸네일 자동화 파이프라인(thumbnail_data_schema_v1.json 및 API 구조)과의 연동을 검증하라. → 산출물 sessions/2026-05-31T11-11/developer.md
 - [2026-05-31] 확정된 API 스펙(thumbnail_data_schema_v1.json)을 기반으로 썸네일 자동화 파이프라인의 초기 프로토타입 개발과 E2E 테스트 환경 설정을 즉시 시작하고, Designer가 제공한 Figma 연동을 위한 최소한의 API 인터페이스(Mock Data 포함) 정의를 구현하라. → 산출물 sessions/2026-05-31T11-17/developer.md
 - [2026-05-31] 확정된 API 스펙(`thumbnail_data_schema_v1.json`)과 자동화 파이프라인의 E2E 테스트 환경 설정을 완료하고, 실제 썸네일 자동화 스크립트 개발 및 통합 프로토타입 구동을 즉시 시작하라. → 산출물 sessions/2026-05-31T11-32/developer.md
+- [2026-05-31] 확정된 API 스펙(`thumbnail_data_schema_v1.json`)과 Designer가 제공한 Figma 연동 프로토타입 명세서를 기반으로, 썸네일 자동화 파이프라인의 E2E 테스트 환경을 최종 점검하고 실제 자동화 스크립트 구동을 위한 초기 버전을 완성하라. → 산출물 sessions/2026-05-31T11-47/developer.md
