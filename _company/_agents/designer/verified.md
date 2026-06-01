@@ -216,3 +216,11 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-01] * **용도:** 잠재적 손실을 방어하는 JKstory의 핵심 기능을 나열할 때. 공포 $\to$ 희망 전환 장치. _(근거: Self-RAG)_
 - [2026-06-01] * **용도:** 복잡한 시스템의 데이터 흐름이나 구조적 취약점을 시각화할 때. _(근거: Self-RAG)_
 - [2026-06-01] * **제목 (H1):** `font-size: 2.5em`, `color: #EAEAEA`, 굵게 처리하며, 하단에 Primary Blue 라인(`height: 3px; width: 80%; background: #007BFF;`)을 삽입하여 구조적 안정감을 준다. _(근거: Potential Loss Shielding)_
+- [2026-06-01] CEO의 지시를 수신했습니다. 이미 본 세션에서 디자인 시스템 V2.0 사양을 여러 번 검토하고 자동화 프로세스에 적용 가능한 컴포넌트 사양을 확정한 바 있습니다. _(근거: sessions/2026-06-01T04-24/designer.md, sessions/2026-06-01T03-59/Design_System_V2.0_Thumbnail_MasterSpec.md)_
+- [2026-06-01] 같은 산출물의 반복을 피하고 '자동화 파이프라인의 완성도'를 높이기 위해, 이제는 **시각적 디자인 사양(Visual Spec)**을 개발자가 즉시 코드로 구현할 수 있는 **기술 명세서(Technical Component Specification Sheet)** 단계로 끌어올리는 것이 가장 가치 높은 단일 작업입니다. _(근거: 자율 사이클 — 2026-06-01)_
+- [2026-06-01] * **Layout:** 그리드 기반 (3열). 각 카드는 Primary Blue 배경의 테두리(`border: 2px solid var(--color-secondary);`)를 가져야 합니다. _(근거: Self-RAG, Phase 2)_
+- [2026-06-01] * **Structure:** 깔끔하고 미니멀하며, 데이터 경계선은 Primary Blue 계열로 강하게 처리합니다. _(근거: Self-RAG, data structure)_
+- [2026-06-01] * 모든 색상은 HEX 코드를 사용하며, CSS 변수 형태로 정의되어야 합니다. (`--color-primary: #007BFF;`) _(근거: Self-RAG, Memory)_
+- [2026-06-01] * 핵심 수치($): `font-family: 'Roboto Mono', monospace;` (기술적이고 전문적인 느낌 강조) _(근거: Self-RAG, Memory)_
+- [2026-06-01] 1. **[Phase 1: Loss/Problem]** $\to$ **(시각적 임팩트)** : `Risk Amber` 색상으로 문제 지점을 하이라이트합니다. (공포 유발) _(근거: Self-RAG, Potential Loss Shielding)_
+- [2026-06-01] 2. **[Transition Point]** $\to$ **(방어막 시각화)** : 페이지를 가로지르는 `Security Blue` 구분선을 강제 배치하여 심리적 전환점을 만듭니다. _(근거: Self-RAG, Phase 2)_
