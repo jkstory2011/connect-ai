@@ -205,3 +205,4 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-01] * **목표:** 단순히 '문제가 있다'가 아니라, '얼마나 큰 재무적 피해를 입었는지' 수치로 압도적으로 전달하여 공포감을 극대화합니다. _(근거: Self-RAG, Potential Loss Shielding)_
 - [2026-06-01] * **디자인 원칙:** 시각적 혼란을 유발하는 데이터 흐름도 위에서 *문제 지점만 빨간색/주황색(`Risk Amber`)으로 하이라이트*하고, 손실액은 압도적인 크기로 배치합니다. _(근거: Self-RAG)_
 - [2026-06-01] * **목표:** 공포에서 희망으로 전환시키는 '방어막' 역할을 시각적으로 수행하며 JKstory의 가치를 각인시킵니다. _(근거: Self-RAG, Phase 2)_
+- [2026-06-01] <create_file path="./JKstory_PROJECTS/design_system/Design_System_V2.0_SOP_Mockup.md"># 🎨 JKstory Design System V2.0 통합 SOP 가이드라인\n\n## 🎯 목표: 자동화 파이프라인 기반의 완벽한 시각적 일관성 확보 (Production Ready)\n\n### 1. 최종 사양 및 기술 구조 확정 (Developer Input based) \n****\n\n* **최종 해상도:** 1280px (W) x 720px (H)\n* **파일 포맷:** PNG (고화질 백업용 JPG 지원)\n* **핵심 구조:** [Source Data] $\to$ [ _(근거: sessions/2026-06-01T02-35/developer.md, ...T02-41/developer.md)_
