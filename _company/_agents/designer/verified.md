@@ -206,3 +206,13 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-01] * **디자인 원칙:** 시각적 혼란을 유발하는 데이터 흐름도 위에서 *문제 지점만 빨간색/주황색(`Risk Amber`)으로 하이라이트*하고, 손실액은 압도적인 크기로 배치합니다. _(근거: Self-RAG)_
 - [2026-06-01] * **목표:** 공포에서 희망으로 전환시키는 '방어막' 역할을 시각적으로 수행하며 JKstory의 가치를 각인시킵니다. _(근거: Self-RAG, Phase 2)_
 - [2026-06-01] <create_file path="./JKstory_PROJECTS/design_system/Design_System_V2.0_SOP_Mockup.md"># 🎨 JKstory Design System V2.0 통합 SOP 가이드라인\n\n## 🎯 목표: 자동화 파이프라인 기반의 완벽한 시각적 일관성 확보 (Production Ready)\n\n### 1. 최종 사양 및 기술 구조 확정 (Developer Input based) \n****\n\n* **최종 해상도:** 1280px (W) x 720px (H)\n* **파일 포맷:** PNG (고화질 백업용 JPG 지원)\n* **핵심 구조:** [Source Data] $\to$ [ _(근거: sessions/2026-06-01T02-35/developer.md, ...T02-41/developer.md)_
+- [2026-06-01] * **문제 지점:** 다이어그램 상에서 문제가 발생한 노드/선은 **Risk Amber**로 강제 하이라이트 처리 (``). _(근거: Self-RAG)_
+- [2026-06-01] * **Font-Family:** 'Roboto Mono', monospace (디지털/기술적 전문성 강조) _(근거: Self-RAG, Memory)_
+- [2026-06-01] * **Base Background Color:** `#1A2B38` (JK Deep Blue). 모든 배경은 이 색상을 기본으로 한다. _(근거: Potential Loss Shielding)_
+- [2026-06-01] * **Primary Action/Safety Color:** `var(--color-safe)` (`#007BFF`, Security Blue). 해결책 제시, JKstory 기능 강조. _(근거: Self-RAG)_
+- [2026-06-01] * **Secondary Danger Color:** `var(--color-danger)` (`#C94A1B`, Risk Amber). 잠재적 손실액($), 경고 지점 강조. **(가장 높은 시각 충격도 필요)** _(근거: Potential Loss Shielding)_
+- [2026-06-01] * **용도:** 재무적 손실액, 위험 수치 등을 제시할 때. 공포감을 극대화하는 가장 중요한 요소. _(근거: Potential Loss Shielding)_
+- [2026-06-01] * `font-size`: 5em ~ 7em (페이지 크기에 따라 가변적, 항상 압도적인 크기 유지) _(근거: Self-RAG)_
+- [2026-06-01] * **용도:** 잠재적 손실을 방어하는 JKstory의 핵심 기능을 나열할 때. 공포 $\to$ 희망 전환 장치. _(근거: Self-RAG)_
+- [2026-06-01] * **용도:** 복잡한 시스템의 데이터 흐름이나 구조적 취약점을 시각화할 때. _(근거: Self-RAG)_
+- [2026-06-01] * **제목 (H1):** `font-size: 2.5em`, `color: #EAEAEA`, 굵게 처리하며, 하단에 Primary Blue 라인(`height: 3px; width: 80%; background: #007BFF;`)을 삽입하여 구조적 안정감을 준다. _(근거: Potential Loss Shielding)_
