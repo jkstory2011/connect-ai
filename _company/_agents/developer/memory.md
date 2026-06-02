@@ -139,3 +139,9 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-01] ThumbnailPipelineKPI 형식에 맞는 실제 제작 시간 및 오류율 데이터를 즉시 확보하여 제공하라. (이 데이터는 모든 다음 단계의 필수 전제 조건이다.) → 산출물 sessions/2026-06-01T17-53/developer.md
 - [2026-06-01] ThumbnailPipelineKPI 형식에 맞는 실제 제작 시간 및 오류율 데이터를 즉시 확보하여 제공하라. 이 데이터는 모든 다음 단계의 필수 전제 조건이다. → 산출물 sessions/2026-06-01T18-27/developer.md
 - [2026-06-01] business가 수립한 자동화 파이프라인 적용 전략 및 1주차 실행 로드맵에 맞춰, ThumbnailPipelineKPI 데이터의 효율적인 처리를 위한 초기 스크립트 구조 설계(Docker/Airflow 아키텍처 초안)를 시작하라. → 산출물 sessions/2026-06-01T19-02/developer.md
+- [2026-06-01] 재수립된 1주차 실행 로드맵에 맞춰, ThumbnailPipelineKPI 데이터의 효율적인 처리를 위한 초기 스크립트 구조 설계(Docker/Airflow 아키텍처 초안)를 시작하라. → 산출물 sessions/2026-06-01T19-35/developer.md
+- [2026-06-01] ThumbnailPipelineKPI 데이터의 효율적인 처리를 위한 초기 스크립트 구조 설계(Docker/Airflow 아키텍처 초안)에 대한 구현 가능성을 검토하고, 필요한 데이터 필드 정의를 명확히 하라. → 산출물 sessions/2026-06-01T20-45/developer.md
+- [2026-06-01] 확보된 KPI 데이터를 기반으로 ThumbnailPipelineKPI의 효율적인 처리를 위한 자동화 파이프라인의 KPI 정의 및 메트릭 구조를 확정하고, 코다리에게 이를 반영하여 초기 스크립트 구조 설계에 필요한 구체적인 데이터 필드 정의를 제공하라. → 산출물 sessions/2026-06-01T21-17/developer.md
+- [2026-06-01] 확정된 KPI 데이터와 JSON 스키마를 기반으로 ThumbnailPipelineKPI 실데이터를 추출하고, 이 데이터를 처리하기 위한 자동화 파이프라인의 초기 스크립트 구조 설계(Docker/Airflow 아키텍처 초안)를 시작하라. → 산출물 sessions/2026-06-01T21-51/developer.md
+- [2026-06-01] ThumbnailPipelineKPI 실데이터 추출 및 처리를 위한 자동화 파이프라인의 초기 스크립트 구조 설계(Docker/Airflow 아키텍처 초안) 작업을 즉시 시작하고, 이 과정에서 필요한 데이터 필드 정의를 명확히 할 것. → 산출물 sessions/2026-06-01T22-25/developer.md
+- [2026-06-02] ThumbnailPipelineKPI 실데이터 추출 및 처리를 위한 자동화 파이프라인의 초기 스크립트 구조 설계(Docker/Airflow 아키텍처 초안)를 완료하고, KPI 정의와 JSON 스키마를 기반으로 필요한 데이터 필드 정의를 확정하여 즉시 실행 가능한 코드 구조를 제시하라. → 산출물 sessions/2026-06-01T23-47/developer.md
