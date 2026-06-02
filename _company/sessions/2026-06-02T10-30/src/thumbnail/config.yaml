@@ -1,0 +1,4 @@
+# 썸네일 생성 설정 예시
+resolution: 1280x720
+frame_interval_seconds: 5
+output_format: png

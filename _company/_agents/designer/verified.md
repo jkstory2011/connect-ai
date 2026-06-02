@@ -297,3 +297,8 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-01] **주의사항:** 현재 KPI 데이터가 물리적으로 제공되지 않았으므로, 이전 세션에서 논의된 `ThumbnailPipelineKPI` 메트릭을 기반으로 **데이터 구조와 시각적 가이드라인**을 확정했습니다. 실제 데이터를 받는 즉시 이 사양에 따라 컴포넌트를 구현해야 합니다 . _(근거: Self-RAG)_
 - [2026-06-01] **전체 테마:** 시스템 모니터링 콘솔 스타일, 다크 모드 기반의 전문성 강조 . _(근거: Self-RAG, Global Style)_
 - [2026-06-01] * **강조 효과:** Line 1과 Line 2의 수직적 차이(Gap)에 **굵은 녹색/파란색 구분선**을 추가하여 '개선 폭' 그 자체를 시각화해야 합니다 . _(근거: Self-RAG, Potential Loss Shielding)_
+- [2026-06-02] | **① 배경 레이어** | 전문성 및 무게감 확보. 모든 정보를 담을 기반. | 어둡고 미니멀한 다크 모드. 복잡하게 얽힌 물류/데이터 흐름도의 패턴(Opacity 5%)이 전체 화면에 깔림. | `background-color: #1A2B38;` (JK Deep Blue). `background-image: repeating-pattern(...)` (흐릿한 다이어그램 오버레이) | _(근거: Self-RAG, Layout Tip)_
+- [2026-06-02] | **② 핵심 후킹 구역** | 시청자의 공포감(Fear)을 극대화. 제목/숫자 배치. | **빨간색 경고성 강조.** 가장 중요한 수치(`Potential Loss`)는 압도적인 크기로 제시. | `color: #C94A1B;` (Risk Amber). `font-size: 5em+`. **좌측 상단 또는 중앙 하단에 배치.** | _(근거: Self-RAG, Phase 1)_
+- [2026-06-02] | **③ 데이터 시각화 구역** | KPI의 출처와 전문성을 확보. 공포를 뒷받침하는 근거 제시. | 복잡한 그래프/차트 대신, 핵심적인 *수치*와 *지표*만을 뽑아 깔끔하게 정리 (Audit Report 스타일). | 작은 섹션 분할(Grid System). `#007BFF` (Security Blue) 라인으로 지표 간의 경계 명확화. 폰트는 `Roboto Mono`. | _(근거: Self-RAG, Potential Loss Shielding)_
+- [2026-06-02] | **④ JKstory 솔루션 구역** | 공포에서 희망(Hope)으로 전환시키는 방어막 역할. | 신뢰감 있는 색상과 핵심 메시지 아이콘 사용. (3가지 기능). | `background-color`는 배경과 차별화되게 `#1A2B38`에서 약간 밝은 그레이톤을 사용하거나, 구분선(`Security Blue`)으로 강하게 분리. 핵심 아이콘 옆에 **`<span style="color:#007BFF;"></span>`** 태그를 사용하여 시각적 강조. | _(근거: Self-RAG, Phase 2)_
+- [2026-06-02] * `font-family: 'Roboto Mono', monospace;` _(근거: Self-RAG, Global Style)_
