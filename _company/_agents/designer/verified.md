@@ -302,3 +302,20 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-02] | **③ 데이터 시각화 구역** | KPI의 출처와 전문성을 확보. 공포를 뒷받침하는 근거 제시. | 복잡한 그래프/차트 대신, 핵심적인 *수치*와 *지표*만을 뽑아 깔끔하게 정리 (Audit Report 스타일). | 작은 섹션 분할(Grid System). `#007BFF` (Security Blue) 라인으로 지표 간의 경계 명확화. 폰트는 `Roboto Mono`. | _(근거: Self-RAG, Potential Loss Shielding)_
 - [2026-06-02] | **④ JKstory 솔루션 구역** | 공포에서 희망(Hope)으로 전환시키는 방어막 역할. | 신뢰감 있는 색상과 핵심 메시지 아이콘 사용. (3가지 기능). | `background-color`는 배경과 차별화되게 `#1A2B38`에서 약간 밝은 그레이톤을 사용하거나, 구분선(`Security Blue`)으로 강하게 분리. 핵심 아이콘 옆에 **`<span style="color:#007BFF;"></span>`** 태그를 사용하여 시각적 강조. | _(근거: Self-RAG, Phase 2)_
 - [2026-06-02] * `font-family: 'Roboto Mono', monospace;` _(근거: Self-RAG, Global Style)_
+- [2026-06-02] | **색상 팔레트** | `Primary`, `Secondary` (`Risk Amber`), `Tertiary`의 정의는 자동화 파이프라인에 가장 큰 기여를 합니다. | 하 (Low) | **CSS/디자인 변수(Design Tokens)**로 완벽히 시스템화해야 함. 코드 레벨에서 색상 코드를 직접 하드코딩하는 것을 지양해야 합니다. | _(근거: Self-RAG, Potential Loss Shielding)_
+- [2026-06-02] | **레이아웃 및 구조** | 'Phase 1: 공포' $\to$ 'Phase 2: 해결책'의 스토리텔링 흐름(공포 $\to$ 희망 전환)은 자동화 시 필수적인 **조건부 로직(Conditional Logic)**을 요구합니다. | 중 (Medium) | 데이터 값(`Potential Loss` 유무, `Error Rate` 크기 등)에 따라 레이아웃의 *섹션 전환*이 자동으로 발생하도록 설계해야 합니다. | _(근거: Self-RAG, Potential Loss Shielding)_
+- [2026-06-02] | **전문성 비주얼** | 복잡하게 얽힌 다이어그램 배경 패턴 및 모노스페이스(Monospace) 타이포 사용은 JKstory의 권위를 유지하는 핵심 요소입니다. | 중상 (Medium-High) | 이 배경 패턴을 '배경 오버레이 레이어'로 분리하여, 메인 콘텐츠가 아무리 바뀔 때도 일관되게 유지되어야 합니다. | _(근거: Self-RAG, Global Style)_
+- [2026-06-02] * **필수 토큰:** `--primary-color` (`#1A2B38`), `--risk-color` (`#C94A1B`), `--success-color` (`#007BFF`) 등 주요 색상 외에, 폰트 사이즈의 계층 구조(`--font-size-h1`, `--font-size-body`)까지 토큰화해야 합니다. _(근거: Designer Memory)_
+- [2026-06-02] * **[Solution Component]:** JKstory의 핵심 기능을 나타내는 아이콘과 설명 블록입니다. 공포감이 최고조에 달했을 때, 이 컴포넌트가 **시각적 방어막처럼** 전면에 등장해야 합니다. _(근거: Self-RAG, Phase 2)_
+- [2026-06-02] 1. **V3.0 사양:** 썸네일 컴포넌트의 목표 레이아웃 및 기능 정의 (sessions/2026-06-02T00-35/). _(근거: 지난 의사결정 로그)_
+- [2026-06-02] 2. **성능 데이터:** 자동화 모듈의 유닛 테스트 결과, 생산성 벤치마크 등 실제 구현 효율 측정값 (sessions/2026-06-02T04-55/developer.md). _(근거: 지난 의사결정 로그)_
+- [2026-06-02] 3. **디자인 지식:** JKstory의 컬러 팔레트 및 구조적 위기감(Potential Loss) 시각화 패턴 (Designer 개인 메모리 / Self-RAG). _(근거: Designer 개인 메모리, Self-RAG)_
+- [2026-06-02] * **핵심 가치:** 공포감(Potential Loss) 제시 $\to$ 신뢰 구축(Authority) $\to$ 해결책 제시(Solution)의 논리적 흐름을 모든 썸네일에서 유지. _(근거: Designer 개인 메모리)_
+- [2026-06-02] 이 사양서에서 정의된 모든 색상 코드, 폰트 크기, 여백은 단순한 '가이드'가 아닌, 자동화 모듈의 **입력 변수(Input Variable)**이자 **제약 조건(Constraint)**으로 간주되어야 합니다. _(근거: Designer 개인 메모리)_
+- [2026-06-02] | `color-danger-loss` | **위험/공포** 강조 (잠재적 손실). | `#C94A1B` (Risk Amber) | Potential Loss 수치, 문제 발생 데이터 포인트. | *가장 강력한 대비색*. 반드시 폰트 크기 및 볼드 처리가 최대화되어야 함. | _(근거: Self-RAG)_
+- [2026-06-02] | `color-solution-win` | **해결책/안정성** 강조 (JKstory 기능). | `#007BFF` (Security Blue) | 핵심 기능 아이콘, 성공 데이터 흐름. | 공포색과 대비되는 신뢰감을 제공하는 보조 색상으로 제한적 사용. | _(근거: Self-RAG)_
+- [2026-06-02] * **글꼴:** `Roboto Mono`, `monospace` 계열 사용을 표준으로 지정합니다. _(근거: Self-RAG, Global Style)_
+- [2026-06-02] * **목표:** 시청자에게 '지금 문제가 있다'는 공포감을 극대화하여 이탈을 방지한다. _(근거: Potential Loss Shielding)_
+- [2026-06-02] * 'Potential Loss' 수치($): 반드시 `color-danger-loss`를 사용하며, 화면에서 가장 크게(Typography Token 적용) 보여줘야 합니다. _(근거: Self-RAG)_
+- [2026-06-02] * **목표:** 공포감을 해소하고, JKstory의 역할(희망)을 도입하는 시각적 분기점. _(근거: Self-RAG)_
+- [2026-06-02] * **목표:** JKstory만이 가진 기술력과 논리적 분석 과정을 시각화하여 권위를 확보한다. _(근거: Potential Loss Shielding)_
