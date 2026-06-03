@@ -369,3 +369,22 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-03] * 비주얼: 복잡한 데이터 흐름도 다이어그램(배경 패턴). _(근거: Self-RAG, Layout Tip)_
 - [2026-06-03] * 비주얼: 코다리 보고서 스타일의 데이터 구조화된 표(Audit Report). _(근거: Self-RAG, Visual Element 2)_
 - [2026-06-03] * 비주얼: JKstory의 핵심 기능 아이콘 블록(`Security Blue`). _(근거: Self-RAG)_
+- [2026-06-03] * **메인 제목 (H1):** Impact Font (예: Bebas Neue, Montserrat Bold). 강하고 직관적인 느낌을 주어 위기감을 조성. (`#C94A1B`와 함께 사용 권장) _(근거: Self-RAG, Potential Loss Shielding)_
+- [2026-06-03] 1. **Background Layer (필수):** 복잡하게 얽힌 다이어그램(물류, 데이터 연결망 등)을 배경 패턴으로 흐릿하게 깔아 전문성을 유지합니다. _(근거: Self-RAG, Layout Tip)_
+- [2026-06-03] 2. **Highlight Component:** 문제 발생 지점만 **`Risk Amber (#C94A1B)`**로 하이라이트 처리된 데이터 포인트(Spotlight)를 전면 배치합니다. (예: 빨간색으로 강조된 연결 고리). _(근거: Self-RAG, Phase 1)_
+- [2026-06-03] 3. **Potential Loss Callout:** "잠재적 손실액" 수치는 페이지 내에서 **가장 크고(5em 이상) 가장 굵게** 배치하며, 반드시 `Risk Amber`를 사용합니다. 이 수치가 해당 섹션의 시각적 무게 중심이 되어야 합니다. _(근거: Self-RAG, Potential Loss Shielding)_
+- [2026-06-03] 1. **Transition Separator (필수):** Phase 1의 Potential Loss Callout 바로 아래에, 페이지 전체를 가로지르는 **강한 `Security Blue (#007BFF)` 구분선(방어벽)**을 배치합니다. 이 선은 '이제 문제가 해결된다'는 심리적 전환 장치 역할을 합니다. _(근거: Self-RAG, Phase 2)_
+- [2026-06-03] 2. **Feature Icon Block:** JKstory의 핵심 기능 3가지 아이콘(AI 예측 엔진, Source Grounding 등)을 배치합니다. 각 아이콘 아래에는 **`Security Blue`**로 강조된 상세 설명(`span` 태그 사용 권장)을 포함하여, 기술적 근거를 제시해야 합니다. _(근거: Self-RAG)_
+- [2026-06-03] 1. **Summary Diagram:** '문제 발생 전'과 'JKstory 도입 후'를 비교하는 **대비 차트(Before/After Chart)**를 사용하여, JKstory의 가치를 명확히 시각화합니다. (색상: `#C94A1B` $\to$ `#007BFF`) _(근거: Designer Memory)_
+- [2026-06-03] CEO님의 지시와 지난 자율 사이클 로그를 검토한 결과, 디자인 시스템 V3.0 기반의 시각적 일관성 확보는 이미 높은 수준으로 진행되었으며 (Master Blueprint 확정), 개발자에게 전달할 준비도 완료된 상태입니다 . _(근거: 통합 스케줄 / 🎨 Designer 활동)_
+- [2026-06-03] JKstory는 콘텐츠 메시지 전달의 '감정 흐름'에 따라 색상을 사용합니다. 단순한 장식이 아닌, **시각적 스토리텔링 도구**입니다 . _(근거: Potential Loss Shielding)_
+- [2026-06-03] | **Primary (Authority)** | JK Deep Blue | `#1A2B38` | C90 M65 Y40 K70 | **[기본]** 배경, 섹션 구분선, 주요 제목 텍스트. 신뢰성 및 전문성 확보에 사용하며, 가장 많이 사용되는 색상이다. (배경: #1A2B38) | _(근거: Self-RAG, Potential Loss Shielding)_
+- [2026-06-03] | **Secondary (Danger/Loss)** | Risk Amber | `#C94A1B` | C0 M75 Y70 K15 | **[위기]** 잠재적 손실액($), 경고 메시지, 문제 발생 지점 하이라이트. 공포감을 극대화하여 시선을 사로잡는 데 사용한다. (강조: `font-size: 2em; font-weight: bold; color: #C94A1B;`) | _(근거: Self-RAG, Potential Loss Shielding)_
+- [2026-06-03] | **Tertiary (Safety/Solution)** | Security Blue | `#007BFF` | C10 M85 Y0 K0 | **[해결책]** JKstory의 핵심 기능 설명, 해결책 아이콘, 긍정적 전환 구간. 위협을 해소하는 희망과 안전함을 시각화한다. | _(근거: Self-RAG)_
+- [2026-06-03] | **Neutral** | Light Grey / White | `#EAEAEA` / `#FFFFFF` | N/A | 배경 분리, 가독성을 위한 텍스트 영역 (주로 라이트 그레이를 사용하여 다크 모드와의 대비를 유지한다.) | _(근거: Self-RAG)_
+- [2026-06-03] 1. **Phase 1: The Loss (공포)** $\to$ 배경/데이터 구조는 `JK Deep Blue` 위주로, 문제가 발생한 지점만 `Risk Amber`로 하이라이트한다. _(근거: Self-RAG)_
+- [2026-06-03] 2. **Phase 2: The Shielding (전환)** $\to$ 공포 수치 제시 직후, 섹션 구분선이나 배경 요소에 `Security Blue`를 사용하여 시각적 방어막을 형성하며 심리적 전환을 유도한다. _(근거: Self-RAG)_
+- [2026-06-03] | **Headline (H1)** | 'Roboto Mono', monospace | `3em` ~ `5em` (가장 큼) | 핵심 주제 제시. 압도적인 크기와 강렬한 색상 (`Risk Amber` 또는 `JK Deep Blue`)을 조합하여 시각적 충격을 극대화한다. | _(근거: Self-RAG)_
+- [2026-06-03] | **Sub Headline (H2)** | 'Roboto Mono', monospace | `1.5em` ~ `2em` | 섹션의 주제 요약. 강한 구분선(Primary Blue) 아래에 배치하여 가독성을 확보한다. | _(근거: Potential Loss Shielding)_
+- [2026-06-03] | **Body Text** | 'Noto Sans KR' (가독성 중시) | `1em` ~ `1.2em` | 상세 설명, 본문 텍스트. 배경과 최소한의 대비를 이루는 색상으로 사용한다. | _(근거: General Design Principle)_
+- [2026-06-03] | **Emphasis Text** | 'Roboto Mono', monospace | (Body Size 기준 + 1) | 강조할 단어 또는 수치. `Risk Amber` 또는 `Security Blue`로 변경하고, 굵게 처리한다. | _(근거: Potential Loss Shielding)_
