@@ -334,3 +334,38 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-02] * **서브 텍스트:** "단순 오류가 아닙니다. 시스템의 구조적 취약점($\text{Potential Loss}$)에서 발생하는 재무적 리스크입니다."를 배치하여, 문제에 대한 전문적인 정의를 내립니다. _(근거: Potential Loss Shielding)_
 - [2026-06-02] **전환 장치:** Phase 1의 PL 수치 바로 아래에 가로지르는 강렬한 구분선(Security Blue `#007BFF`)을 삽입하여 심리적 전환을 유도합니다. _(근거: Self-RAG, Transition Device)_
 - [2026-06-02] 1. **ROI 계산기 모듈 (Interactive):** 단순히 가격만 제시하지 않고, "잠재적 손실액 대비 보험료 수준"이라는 프레임을 사용합니다. 사용자가 직접 PL을 입력하면 예상되는 비용 절감액(ROI)이 **`#007BFF`**로 크게 표시되어야 합니다. _(근거: Potential Loss Shielding)_
+- [2026-06-02] 이 썸네일은 단순히 제목을 나열하는 것을 넘어, **'시청자의 공포감 자극 $\to$ JKstory가 유일한 해결책임을 각인'**시키는 설득 구조(Persuasion Flow)를 하나의 이미지로 담아내는 데 중점을 두었습니다. _(근거: Self-RAG, Potential Loss Shielding)_
+- [2026-06-02] **목표:** 클릭을 유도하는 압도적인 긴장감과 동시에, JKstory가 제시하는 분석의 깊이와 신뢰도를 한 번에 전달한다. (Authority + Urgency) _(근거: Self-RAG)_
+- [2026-06-02] | **배경 레이어** | 복잡하게 연결된 데이터 흐름도(물류/회계 다이어그램)를 배경 전체에 오버레이로 깔아 전문성을 확보. (흐릿한 패턴 처리 필수). | `background-color: #1A2B38` (JK Deep Blue) | 신뢰성 및 깊이감 부여 | _(근거: Self-RAG)_
+- [2026-06-02] | **강조 색상 1 (위협)** | 잠재적 손실액, 문제가 발생한 지점 강조. 이 색상이 시선이 가장 먼저 머물러야 하는 영역임. | `#C94A1B` (Risk Amber) - 강렬한 경고색 | 공포감 극대화 (Phase 1) | _(근거: Self-RAG)_
+- [2026-06-02] | **강조 색상 2 (해결)** | JKstory의 솔루션, 안전하게 복구된 데이터 흐름. 이 부분이 희망을 상징하며 시선을 분산시켜야 함. | `#007BFF` (Security Blue) - 명확한 방어벽 역할 | 공포 $\to$ 희망 전환 유도 (Phase 2) | _(근거: Self-RAG)_
+- [2026-06-02] | **타이포그래피** | 기술적이고 간결함. 고정폭(Monospace) 폰트를 사용하여 전문성을 극대화합니다. (예: Roboto Mono, 혹은 코딩 콘솔 느낌의 폰트). | `font-family: 'Roboto Mono', monospace` | 전문성 강조 [근거: Self-RAG] | _(근거: Self-RAG)_
+- [2026-06-02] | **레이아웃 원칙** | 좌측 상단/좌하단에 문제점을, 우측 전반부에 해결책을 배치하는 대칭 구조를 채택합니다. (공포 $\to$ 안정) | 2분할 구도(Problem vs Solution) 또는 사선 분리 구도 활용. | 시각적 흐름 설계 | _(근거: Self-RAG)_
+- [2026-06-03] * **Primary (Authority - 신뢰/기본):** `#1A2B38` (JK Deep Blue). *사용처:* 배경, 섹션 구분선, 제목 하단 라인. 전문성을 확보합니다. _(근거: Self-RAG, Potential Loss Shielding)_
+- [2026-06-03] * **Secondary (Danger/Loss - 공포/경고):** `#C94A1B` (Risk Amber). *사용처:* **잠재적 손실액($), 문제 발생 지점 강조**, 경고 메시지. 시각적 충격도(Visual Impact)를 극대화합니다. _(근거: Self-RAG, Potential Loss Shielding)_
+- [2026-06-03] * **Tertiary (Safety/Solution - 해결책):** `#007BFF` (Security Blue). *사용처:* JKstory의 핵심 기능 아이콘 설명, 긍정적 전환 메시지. 희망을 상징하며 공포에서 벗어나는 느낌을 줍니다. _(근거: Self-RAG)_
+- [2026-06-03] * [추측]: 배경 패턴은 복잡하게 얽힌 물류 시스템 다이어그램(데이터 연결망)의 흐릿한 오버레이로 유지합니다. (전문성 확보). _(근거: Self-RAG, Layout Tip)_
+- [2026-06-03] 1. **Phase 1: The Loss (공포 극대화):** 시청자에게 '무엇이 위험한가'를 각인시킵니다. 배경은 어둡게(`Primary`), 문제가 발생한 지점과 수치는 `#C94A1B`로 강렬하게 하이라이트됩니다. 가장 큰 숫자(잠재적 손실액)는 5em 크기로 배치합니다. _(근거: Self-RAG, Potential Loss Shielding)_
+- [2026-06-03] 2. **Phase 2: The Shielding (전환/해결책):** 페이지를 가로지르는 강한 구분선(`Security Blue`)을 사용하여 시각적 장벽을 만듭니다. 공포에서 안도감으로의 전환점입니다. JKstory가 제시하는 핵심 기능(3가지 아이콘)이 방어막처럼 떠오르며 해결책을 설명합니다. _(근거: Self-RAG, Phase 2)_
+- [2026-06-03] 3. **Phase 3: The Authority (신뢰/Call To Action):** JKstory의 권위와 전문성을 확정적으로 보여줍니다. 데이터 구조화된 보고서 형태를 취하며, 다음 행동(리드 정보 입력)을 유도하는 CTA 영역은 `#007BFF` 기반으로 설계합니다. _(근거: Potential Loss Shielding)_
+- [2026-06-03] 1. **후킹 타이틀 (Title):** 반드시 '잠재적 손실액' 등 구체적인 숫자를 포함하여 공포감을 유발합니다. (예: "당신의 회사, 연간 5억이 새고 있습니다.") _(근거: 자율 사이클 — 2026-06-02T22:26)_
+- [2026-06-03] 2. **경고 시각화:** 배경에 복잡하고 전문적인 다이어그램(물류/데이터 흐름도)을 배치하고, 문제 지점만 `#C94A1B`로 빨갛게 표시합니다. (전문성 강조). _(근거: Self-RAG)_
+- [2026-06-03] 3. **솔루션 강조:** 썸네일의 우측 또는 하단에 JKstory 로고와 함께 **'위험 방어(Potential Loss Shielding)'**라는 키워드를 `#007BFF`로 배치합니다. (공포 $\to$ 희망 전환 시각화). _(근거: Self-RAG, Potential Loss Shielding)_
+- [2026-06-03] * **위기감 강조:** 모든 잠재적 손실액($)과 경고 메시지는 무조건 `#C94A1B` (`Risk Amber`)를 최우선으로 사용합니다. _(근거: Self-RAG, Potential Loss Shielding)_
+- [2026-06-03] * **신뢰도 부여:** 기본 배경색 및 시스템 요소(헤더, 구분선 등)는 `#1A2B38` (`JK Deep Blue`)로 통일합니다. _(근거: Self-RAG, Primary Color)_
+- [2026-06-03] * **해결책 강조:** JKstory의 기능이나 긍정적 변화 지점은 `#007BFF` (`Security Blue`)를 사용하며, 이 색상이 공포색을 '덮는' 시각적 효과를 내도록 합니다. _(근거: Self-RAG)_
+- [2026-06-03] * 메인 헤드라인 및 수치 강조 시에는 **Impact/Bold한 산세리프체**를 사용하여 강렬함과 위기감을 전달합니다. _(근거: Potential Loss Shielding)_
+- [2026-06-03] * **Loss $\to$ Shielding:** 페이지가 어두운 배경에서 밝은 배경으로 '밝아지는' 듯한(Fade-in) 시각적 변화를 통해 심리적 안정을 유도합니다. _(근거: Self-RAG, Potential Loss Shielding)_
+- [2026-06-03] * **데이터 흐름:** 다이어그램 요소는 단순히 배치되는 것이 아니라, 마치 **시스템이 작동하며 연결 고리를 찾아내는 듯한** 애니메이션(Line Drawing/Tracing)을 적용하여 전문성을 극대화합니다. _(근거: Self-RAG, 专业性 강조)_
+- [2026-06-03] 모든 콘텐츠는 다음의 3단계 감정 흐름을 따라야 합니다. 이 구조가 곧 JKstory의 가장 강력한 비주얼 브랜딩 요소입니다. _(근거: sessions/2026-06-03T01-33/designer.md)_
+- [2026-06-03] | **Phase 1** | 공포 (Loss) | 위기감 극대화, 문제 지점 강조. 압도적인 수치 제시. | `#C94A1B` (Risk Amber) | 경고/질문형 ("만약 ~한다면?") | _(근거: Self-RAG, Potential Loss Shielding)_
+- [2026-06-03] | **Phase 2** | 방어 (Shielding) | 문제점 $\to$ 해결책의 전환. 희망 제시. 전문적 구조화. | `#007BFF` (Security Blue) | 기능 설명/데이터 구조화 ("우리는 ~을 합니다.") | _(근거: Self-RAG, Potential Loss Shielding)_
+- [2026-06-03] | **Phase 3** | 권위 (Authority) | 최종 가치 제안 및 신뢰 확립. 명확하고 직설적인 결론 제시. | `#1A2B38` (JK Deep Blue) | CTA/결론("이것이 최선입니다.") | _(근거: Potential Loss Shielding)_
+- [2026-06-03] | **[A] Loss Callout (Phase 1)** | 좌측 상단 (가장 시선이 가는 곳). *위기감* 조성. | 배경: `#0F232E` (어두운 청회색). 타이틀 강조: `color: #C94A1B; font-size: 4em;` | `{Potential_Loss_Value}` (가장 큰 숫자로 배치) | _(근거: Self-RAG)_
+- [2026-06-03] | **[B] Core Problem Statement** | 중앙 메인 영역. 시청자 질문 제기. | 배경: `#1A2B38`. 텍스트: `color: #EAEAEA;` 서브 텍스트 강조: `color: #C94A1B;` | `{Critical_Vulnerability}` (문제의 본질적 정의) | _(근거: Potential Loss Shielding)_
+- [2026-06-03] | **[C] Solution Highlight (Phase 2)** | 우측 하단. JKstory가 제공하는 가치. *희망* 제시. | 배경: `#0A385B` (Security Blue 계열). 아이콘/텍스트: `color: #007BFF;` | `{Feature_1}, {Feature_2}, {Feature_3}` (핵심 기능 묶음) | _(근거: Self-RAG)_
+- [2026-06-03] | **[D] Brand Stamp / CTA** | 모든 썸네일의 우측 하단 코너. | 배경: 투명도 70%. 로고/텍스트: `color: #EAEAEA;` 작은 글씨로 'JKstory' 명시. | 고정값 (수동 조정 불가) | _(근거: JKdeep blue, 브랜드 일관성)_
+- [2026-06-03] 모든 영상은 이 5단계의 시각적 흐름을 따라야 하며, 각 단계마다 색상과 레이아웃이 강하게 전환되어야 합니다. _(근거: sessions/2026-06-03T01-18/designer.md)_
+- [2026-06-03] * 비주얼: 복잡한 데이터 흐름도 다이어그램(배경 패턴). _(근거: Self-RAG, Layout Tip)_
+- [2026-06-03] * 비주얼: 코다리 보고서 스타일의 데이터 구조화된 표(Audit Report). _(근거: Self-RAG, Visual Element 2)_
+- [2026-06-03] * 비주얼: JKstory의 핵심 기능 아이콘 블록(`Security Blue`). _(근거: Self-RAG)_
