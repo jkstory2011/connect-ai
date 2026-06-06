@@ -111,3 +111,5 @@ _Researcher 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 
 - [2026-06-01] AI 음악 감상 서비스의 최신 트렌드, 주요 경쟁 서비스, 사용자 참여 패턴 및 시장 성장 예측에 대한 핵심 데이터를 수집하고 요약하라. → 산출물 sessions/2026-06-01T06-31/researcher.md
 - [2026-06-01] 현재 AI 음악감상(AI Music Listening) 시장의 주요 트렌드, 사용자 니즈(Pain Points), 그리고 경쟁사 동향에 대한 최신 데이터를 수집하고 요약하라. → 산출물 sessions/2026-06-01T07-25/researcher.md
 - [2026-06-02] ThumbnailPipelineKPI 데이터를 기반으로, 자동화 목표(생산성 30%↑, 오류율 50%↓) 달성을 위한 가장 시급한 Pain Point 키워드와 Gap Analysis를 도출하라. → 산출물 sessions/2026-06-02T00-35/researcher.md
+- [2026-06-05] Suno AI의 핵심 기능, 경쟁사 대비 강점과 약점, 주요 활용 사례, 그리고 음악 제작에 필요한 외부 도구(예: Notebook LM 등)를 포함하여 심층적인 분석 보고서를 작성하라. → 산출물 sessions/2026-06-05T04-11/researcher.md
+- [2026-06-05] AI 음악 제작 가이드라인 구축을 위해 전문적인 음악 작사(Lyric Writing)와 작곡(Composition)에 대한 심층적인 온라인 자료를 수집하고 정리하라. 특히 감정적 아크를 BPM 및 Key 변화로 치환하는 구조적 접근법에 중점을 두어 정보를 모아라. → 산출물 sessions/2026-06-05T04-15/researcher.md
