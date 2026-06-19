@@ -1,0 +1,12 @@
+{
+  "ceo": "nousresearch/hermes-4-70b",
+  "youtube": "google/gemma-4-e2b",
+  "instagram": "google/gemma-4-e2b",
+  "designer": "google/gemma-4-e2b",
+  "developer": "nousresearch/hermes-4-70b",
+  "business": "nousresearch/hermes-4-70b",
+  "secretary": "google/gemma-4-e2b",
+  "editor": "google/gemma-4-e2b",
+  "writer": "google/gemma-4-e2b",
+  "researcher": "nousresearch/hermes-4-70b"
+}
